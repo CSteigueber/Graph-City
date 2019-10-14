@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+}
+img {
+    width: 50%;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: 25% 1fr 1fr 2fr 2fr 1fr 1fr 25%; 
+    grid-template-rows: 2fr 1fr;
+    /*grid-template-areas: "header header header header header header header header"
+                         ". . street_art_text street_art_text street_art_img street_art_img . ."
+                         ". img1 img1 img2 img3 img4 img4 ."
+                         ". text1 text1 text2 text3 text4 text4 .";
+    */
+    background-color: green;
+}
+header{
+    height: 20%;
+    background-color: black;
+    color: wheat;
+}
+/*header{
+    grid-area: 1/1 / 2/9/*header;
+    background-color: black;
+    color: aliceblue;
+}*/
+.street_art_text{
+    grid-area: 1/3 / 2/5/*street_art_text*/;
+    background-color: yellow;
+    width: 100%;
+}
+.street_art_img{
+    grid-area: 1/5 / 2/7/*street_art_img*/;
+    background-color: yellow;
+}
+.img1{
+    grid-area: 2/2 / 3/4 /*img1*/;
+    align-self: center; 
+}
+.img2{
+    grid-area: 2/4 / 3/5 /*img2*/;
+}
+.img3{
+    grid-area: 2/5 / 3/6 /*img3*/;
+}
+.img4{
+    grid-area: 2/6 / 3/8 /*img4*/;
+}
+/*.text1{
+    grid-area: 3/2 / 4/4 /*text1;
+}
+.text2{
+    grid-area:  3/4 / 4/5 /*text2;
+}
+.text3{
+    grid-area: 3/5 / 4/6 /*text3;
+}
+.text4{
+    grid-area: 3/6 / 4/8 /*text4;
+}*/
