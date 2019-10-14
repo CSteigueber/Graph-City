@@ -6,11 +6,13 @@ img {
 }
 .grid_container{
     display: grid;
-    grid-template-columns: 25% 1fr 1fr 2fr 2fr 1fr 1fr 25%; 
-    grid-template-rows: 0.5fr 1fr 1fr;
-    grid-template-areas: "header header header header header header header header"
-                         " . . street_art_text street_art_text street_art_img street_art_img . . "
-                         ". img1 img1 img2 img3 img4 img4 .";
+    grid-template-columns: 4fr 1fr 0.75fr 0.25 0.75fr 0.25fr 0.25fr 1fr 0.75fr 0.25fr 1fr 4fr; 
+    grid-template-rows: 0.5fr 0.25fr 1fr 0.25fr 1fr 0.25fr;
+    grid-template-areas: "header header header header header header header header header header header header"
+        ". . . . . . . . . . . ."                 
+        " . . street_art_text street_art_text street_art_text . street_art_img street_art_img street_art_img street_art_img . . "
+        ". img1 img1 . img2 . . img3 . img4 img4 ."
+        ". . . . . . . . . . . ."
 }
 
 header{
@@ -19,7 +21,7 @@ header{
     color: aliceblue;
 }
 .street_art_text{
-    grid-area: street_art_text;
+    grid-area:  street_art_text;
     width: 100%;
 }
 .street_art_img{
@@ -38,4 +40,8 @@ header{
 .img4{
     grid-area: img4;
 }
+/*.black{
+    grid-area: black;
+    background-color: black;
+}*/
 
