@@ -20,6 +20,9 @@ header{
     background-color: black;
     color: aliceblue;
     font-size: 35px;
+    align-self: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
 }
 .street_art_text{
     grid-area:  text;
