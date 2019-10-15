@@ -5,13 +5,15 @@ body{
 .grid_container{
     display: grid;
     grid-template-columns: 20% repeat(4, 12.5%) 20%; 
-    grid-template-rows: 0.75fr 1fr 1fr 8%;
+    grid-template-rows: 0.75fr 1fr 0.5fr 0.5fr .1fr;
     grid-template-areas:    "h h h h h h"
                             ". text text img img ."
                             ". img1 img2 img3 img4 ."
+                            ". t1 t2 t3 t4 ."
                             "b b b b b b";
-    grid-gap: 13% 2%;
+    grid-gap: 5% 2%;
 }
+
 h2{
     font-size: 15px;
 }
@@ -44,38 +46,54 @@ header{
 }
 .img1{
     grid-area: img1;
-    color: gray;
 }
 .img1 img{
-    width: 75%;
+    width: 80%;
 }
 .img2{
     grid-area: img2;
-    color: gray;
 }
 .img2 img{
-    width: 75%;
+    width: 80%;
 }
 .img3{
     grid-area: img3;
-    color: gray;
    
 }
 .img3 img{
-    width: 75%;
+    width: 80%;
 }
 .img4{
     grid-area: img4;
-    color: gray;
 }
 .img4 img{
-    width: 75%;
+    width: 80%;
+}
+.t1{
+    grid-area: t1;
+    color: gray;
+    line-height: 1.5;
+}
+.t2{
+    grid-area: t2;
+    color: gray;
+    line-height: 1.5;
+}
+.t3{
+    grid-area: t3;
+    color: gray;
+    line-height: 1.5;
+}
+.t4{
+    grid-area: t4;
+    color: gray;
+    line-height: 1.5;
 }
 .blck{
     grid-area: b;
     background-color: black;
     color: black;
     place-self: stretch stretch;
-    padding-bottom: 1.5%;
+    margin-top: 5%;
 }
 
