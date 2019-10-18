@@ -22,8 +22,8 @@ body {
   .grid_container {
     -ms-grid-columns: (20%)[4];
         grid-template-columns: repeat(4, 20%);
-    -ms-grid-rows: 0.75fr 1fr 0.5fr 0.5fr;
-        grid-template-rows: 0.75fr 1fr 0.5fr 0.5fr;
+    -ms-grid-rows: 0.75fr 1fr 0.25fr 0.25fr;
+        grid-template-rows: 0.75fr 1fr 0.25fr 0.25fr;
         grid-template-areas: "h h h h" "text text img img" "img1 img2 img3 img4" "t1 t2 t3 t4";
   }
 }
@@ -42,7 +42,7 @@ body {
 
 @media (max-width: 1000px) {
   .grid_container {
-    grid-gap: 0.01% 0.01%;
+    grid-gap: 1% 1%;
   }
 }
 
@@ -83,19 +83,21 @@ header {
   .street_art_text {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .street_art_text {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .street_art_text {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -115,19 +117,21 @@ header {
   .street_art_img {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .street_art_img {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .street_art_img {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -145,19 +149,21 @@ header {
   .street_art_img img {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .street_art_img img {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .street_art_img img {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -175,19 +181,21 @@ header {
   .img1 {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .img1 {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .img1 {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -205,19 +213,21 @@ header {
   .img1 img {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .img1 img {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .img1 img {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -235,19 +245,21 @@ header {
   .img2 {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .img2 {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .img2 {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -265,19 +277,21 @@ header {
   .img2 img {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .img2 img {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .img2 img {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -295,19 +309,21 @@ header {
   .img3 {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .img3 {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .img3 {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -325,19 +341,21 @@ header {
   .img3 img {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .img3 img {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .img3 img {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -355,19 +373,21 @@ header {
   .img4 {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .img4 {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .img4 {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -385,19 +405,21 @@ header {
   .img4 img {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .img4 img {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .img4 img {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -417,19 +439,21 @@ header {
   .t1 {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .t1 {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .t1 {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -449,19 +473,21 @@ header {
   .t2 {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .t2 {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .t2 {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -481,19 +507,21 @@ header {
   .t3 {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .t3 {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .t3 {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
 
@@ -513,18 +541,20 @@ header {
   .t4 {
     width: 100%;
     font-size: 2em;
+    line-height: 1;
   }
 }
 
 @media (max-width: 700px) {
   .t4 {
-    width: 150%;
+    width: 100%;
     font-size: 1em;
   }
 }
 
 @media (max-width: 400px) {
   .t4 {
-    font-size: 0.5em;
+    width: 100%;
+    font-size: 0.75em;
   }
 }
