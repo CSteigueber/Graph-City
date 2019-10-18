@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+}
+img{
+    width: 50%;
+}
+header{
+    grid-row-start: 1;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.grid_columns_container_bottom{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+ 
+}
+.grid_columns_container_top{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid_columns_item{
+    
+}
+.grid_rows_container{
+    display: grid;
+    grid-template-rows: 30% 1fr 1fr;
+ 
+}
+
+
+.grid_item_street_art{
+    font-size: 10px;
+    grid-column-start: 2;
+    width: 100%;
+    background-color: green;
+}
+grid_item_boxes{
+    grid-column-start: 3;
+}
+grid_item_man{
+    grid-column-start: 2;
+}
+.bikes img{
+    width: 100%;
+}

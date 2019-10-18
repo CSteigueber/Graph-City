@@ -1,0 +1,134 @@
+@mixin screen-width (){
+    @media (min-width:1400px){
+        width: 70%;
+    }
+    @media (max-width:1400px){
+        width: 100%;
+        font-size: 1em;
+    }
+    @media (max-width: 700px){
+        width: 150%;
+        font-size: 1em;
+    }
+    @media (max-width: 400px){
+        font-size: 0.5em;
+    }
+}
+@mixin gap () {
+    @media (min-width: 1400px) {
+        grid-gap: 5% 2%; 
+    }
+    @media (max-width: 1400px){
+        grid-gap: 2% 5%;
+    }
+}
+@mixin grid-template () {
+    display: grid;
+    grid-template-rows: 0.75fr 1fr 0.5fr 0.5fr;
+    @media (min-width:1400px){  
+        grid-template-columns: 20% repeat(4, 12.5%) 20%; 
+        grid-template-areas:    "h h h h h h"
+                                ". text text img img ."
+                                ". img1 img2 img3 img4 ."
+                                ". t1 t2 t3 t4 .";
+    }
+    @media (max-width: 1400px){
+        grid-template-columns: repeat(4, 20%);
+        grid-template-areas: "h h h h"
+                             "text text img img"
+                              "img1 img2 img3 img4"
+                              "t1 t2 t3 t4";
+    }
+}
+body{
+    text-align: center;
+    font-size: 10px;
+}
+.grid_container{
+    @include grid-template();
+    @include gap();
+}
+
+h2{
+    font-size: 15px;
+}
+
+header{
+    grid-area: h;
+    background-color: black;
+    color: aliceblue;
+    font-size: 35px;
+    align-self: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.street_art_text{
+    grid-area:  text;
+    @include screen-width();
+    height: 100%;
+    align-self: start;
+    justify-self: end;
+    color: black;
+    
+}
+.street_art_img{
+    grid-area: img;
+    @include screen-width();
+    justify-self: start;
+}
+.street_art_img img{
+    width: 100%;
+}
+.img1{
+    grid-area: img1;
+    @include screen-width();
+}
+.img1 img{
+    width: 80%;
+}
+.img2{
+    grid-area: img2;
+    @include screen-width;
+}
+.img2 img{
+    width: 80%;
+}
+.img3{
+    grid-area: img3;
+    @include screen-width;
+   
+}
+.img3 img{
+    width: 80%;
+}
+.img4{
+    grid-area: img4;
+    @include screen-width;
+}
+.img4 img{
+    width: 80%;
+}
+.t1{
+    grid-area: t1;
+    color: gray;
+    line-height: 1.5;
+    @include screen-width;
+}
+.t2{
+    grid-area: t2;
+    color: gray;
+    line-height: 1.5;
+    @include screen-width;
+}
+.t3{
+    grid-area: t3;
+    color: gray;
+    line-height: 1.5;
+    @include screen-width;
+}
+.t4{
+    grid-area: t4;
+    color: gray;
+    line-height: 1.5;
+    @include screen-width;
+}
